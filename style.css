@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bs-primary-color: rgb(119, 116, 116);
+    --bs-secondary-color:rgb(230, 231, 233);
+    --bs-text-color: rgb(119, 116, 116);
+}
+
+body{
+    background: var(--bs-secondary-color);
+    margin: 0;
+    padding: 0;
+    }
+p{
+    color: var(--bs-text-color);
+}
+
+
+
+/* Navbar Styling  */
+.navbar{
+    background-color: var(--bs-primary-color);
+    height: 80px;
+    color: white;
+}
+.icon{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    color: black;
+
+}
+.icon:hover{
+    color: white;
+}
+.nav-link{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+    outline: none;
+}
+@media screen and (max-width : 575px){
+    .nav-item .nav-link{        
+        color: rgb(119, 116, 116);;
+    }
+}
+
+/* Hero Section Styling  */
+
+.hero-section{
+   height:1100px;
+    width: 100%;
+
+}
+.bg-main-img{
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.hero{
+    position: relative;
+    left: 100px;
+    top: 80px;
+    max-width: 50%;
+}
+.hero h2{
+    
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+   
+}
+.hero .field{
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* color: rgb(160, 158, 153); */
+    color: var(--bs-text-color);
+}
+
+.hero p{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    /* color: rgb(160, 158, 153); */
+    color: var(--bs-text-color);
+    font-weight: 600;
+    line-height: 2;
+    
+}
+
+/* Button Designing  */
+.btn{
+    padding-left: 0;
+    margin-right: 15px;
+    margin-top: 10px;
+    
+    
+}
+.btn-outline-secondary{
+    padding-left: 12px;
+}
+.btn-outline-secondary:hover{
+    background-color: rgb(119, 116, 116);
+}
+
+/* Footer Styling  */
+.footer-section h5 a{
+    color: white;
+}
+.footer-section h5 a:hover{
+    color: black;
+}
+.footer-section{
+    background-color: var(--bs-primary-color);
+    height: 200px;
+    color: white; 
+
+}
+.footer-para{
+    color: white; 
+
+}
+
+.footer-section .container{
+    padding-top: 50px;
+}
+@media screen and (max-width : 439px){
+    .footer-section h5,p{        
+      font-size:0.6rem;
+    }
+}
+/* About Navbar Styling */
+.about-navbar{
+    background-color: white;
+}
+.about-navbar .nav-item .nav-link{
+    color: var(--bs-text-color);
+    
+}
+.about-navbar .nav-item .active.nav-link{
+    color: black;
+}
+
+.about-navbar .nav-item .nav-link:hover{
+    color: black;
+}
+.about-navbar .icon:hover{
+    color:var(--bs-text-color);
+}
+
+/* About Hero Section Styling  */
+
+.about-hero-section .container{
+    display: grid;
+    place-content: center;
+    height: inherit;
+}
+.bg-main{
+    height: 100vh;
+    position: relative;
+}
+
+.about-hero-section p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+}
+.about-para{
+    padding-left: 80px;
+}
+
+.hero-img-section{
+  
+    min-width: 27rem;
+    border-radius: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+}
+.img-div{
+    padding: 100px;
+}
+@media screen and (max-width :1200px) {
+    .hero-img-section{
+        width: 20rem;
+        border-radius: 0.5rem;
+      
+    }
+    
+}
+@media screen and (max-width:857px) {
+    .hero-img-section{
+        align-items: center;
+    }
+    
+}
+
+/* Portfolio Styling  */
+.portfolio-hero .container{
+    max-width: 50rem;
+    height: auto;
+}
+.project-img-ancor{
+    
+    transition: .5s ease;
+}
+.project-img-ancor:hover{
+    opacity: 0.2;
+
+}
